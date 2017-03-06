@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "latoregular", "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: #edf0f5;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}

@@ -19,6 +19,8 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/font-awesome/css/font-awesome.min.css",
+        "assets/css/site.css",
         "styles.css"
       ],
       "scripts": [],
