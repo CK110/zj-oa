@@ -70,6 +70,20 @@ export class AppComponent implements AfterViewInit,OnDestroy{
     event.preventDefault();
   }
 
+  toggleTopMenu(event: Event) {
+    this.topMenuButtonClick = true;
+    this.menuActiveMobile = false;
+
+    if(this.topMenuActive) {
+      this.hideTopMenu();
+    }
+    else {
+      this.topMenuActive = true;
+    }
+
+    event.preventDefault();
+  }
+
   hideTopMenu() {
     this.topMenuLeaving = true;
     setTimeout(() => {
