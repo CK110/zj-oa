@@ -84,6 +84,14 @@ export class AppComponent implements AfterViewInit,OnDestroy{
     event.preventDefault();
   }
 
+  onMenuClick() {
+    this.menuClick = true;
+
+    // setTimeout(() => {
+    //   jQuery(this.scroller).nanoScroller();
+    // }, 600);
+  }
+
   hideTopMenu() {
     this.topMenuLeaving = true;
     setTimeout(() => {

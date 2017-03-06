@@ -20,6 +20,8 @@
       "prefix": "app",
       "styles": [
         "../node_modules/font-awesome/css/font-awesome.min.css",
+        "../node_modules/primeng/resources/themes/zjcustom/custom.theme.css",
+        "../node_modules/primeng/resources/themes/primeui-ng-all.min.css",
         "assets/css/site.css",
         "styles.css"
       ],

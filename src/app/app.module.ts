@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {SideBarModule} from "./component/sidebar/sidebar";
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +17,7 @@ import {SideBarModule} from "./component/sidebar/sidebar";
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    SideBarModule
+    SideBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

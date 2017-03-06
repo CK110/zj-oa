@@ -23,30 +23,30 @@ export class SideBar implements OnInit {
         label: '新建流程', icon: 'fa-desktop',
         items: [
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
+          { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
+          { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
+          { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
           { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
-          { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
-          { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
-          { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] }
         ]
       },
       {
         label: '个人办公', icon: 'fa-bookmark',
         items: [
-          { label: '工作计划', icon: 'fa-dribbble', routerLink: ['/empty'] },
-          { label: '通 讯 录', icon: 'fa-linkedin ' ,routerLink: ['/empty']},
-          { label: '工作CASE', icon: 'fa-list-ol ',routerLink: ['/empty']}
+          { label: '工作计划', icon: 'fa-dribbble', routerLink: ['/errand'] },
+          { label: '通 讯 录', icon: 'fa-linkedin ' ,routerLink: ['/airapp']},
+          { label: '工作CASE', icon: 'fa-list-ol ',routerLink: ['/errand']}
         ]
       },
       {
         label: '消息中心', icon: 'fa-desktop',
         items: [
           { label: '发送消息', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '已发消息', icon: 'fa-google', routerLink: ['/errand'] },
+          { label: '已发消息', icon: 'fa-google', routerLink: ['/airapp'] },
           { label: '已收消息', icon: 'fa-android', routerLink: ['/errand'] }
         ]
       },
@@ -54,72 +54,72 @@ export class SideBar implements OnInit {
         label: '信息发布', icon: 'fa-desktop',
         items: [
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] }
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] }
         ]
       },
       {
         label: '业务管理', icon: 'fa-desktop',
         items: [
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] }
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] }
         ]
       },
       {
         label: '车辆管理', icon: 'fa-desktop',
         items: [
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] }
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] }
         ]
       },
       {
         label: '综合查询', icon: 'fa-desktop',
         items: [
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] }
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] }
         ]
       },
       {
         label: '订票管理', icon: 'fa-desktop',
         items: [
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] }
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] }
         ]
       },
       {
         label: '报表统计', icon: 'fa-desktop',
         items: [
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] }
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] }
         ]
       },
       {
         label: '基础数据', icon: 'fa-desktop',
         items: [
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] }
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] }
         ]
       },
       {
         label: '库存管理', icon: 'fa-desktop',
         items: [
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] },
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] },
           { label: '公假流程', icon: 'fa-android', routerLink: ['/errand'] },
-          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/errand'] }
+          { label: '公假续假流程', icon: 'fa-google', routerLink: ['/airapp'] }
         ]
       }
     ];

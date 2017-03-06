@@ -10,6 +10,10 @@ const appRoutes: Routes = [
   {
     path:'errand',
     loadChildren:"app/oa/errand/errand#ErrandModule"
+  },
+  {
+    path:'airapp',
+    loadChildren:"app/oa/airapp/airapp#AirAppModule"
   }
 
 

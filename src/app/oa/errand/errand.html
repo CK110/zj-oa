@@ -1,1 +1,67 @@
-errand
+<div class="ui-g" >
+  <div class="ui-g-12">
+    <p-fieldset legend="加班申请表查询">
+      <div>
+        <form #userForm="ngForm">
+          <div class="ui-g">
+            <div [ngStyle]="{'text-align':'right'}" class="ui-g-3">
+              <p-label value="姓名："></p-label>
+            </div>
+            <div class="ui-g-3">
+              <input pInputText type='text' name="username" ngModel #ctl_username="ngModel"  required v_maxlength v_maxlength="20" [(ngModel)]="username"/>
+              <control-messages [control]="ctl_username"></control-messages>
+            </div>
+            <div [ngStyle]="{'text-align':'right'}" class="ui-g-3">
+              <p-label value="公司："></p-label>
+            </div>
+            <div class="ui-g-3">
+              <p-dropdown name="corpcode" ngModel #ctl_corpcode="ngModel"  required [options]="corpList" valueField="corpcode" textField="corpName" [(ngModel)]="corpcode"></p-dropdown>
+              <control-messages [control]="ctl_corpcode"></control-messages>
+            </div>
+          </div>
+          <div class="ui-g">
+            <div [ngStyle]="{'text-align':'right'}" class="ui-g-3">
+              <p-label value="部门："></p-label>
+            </div>
+            <div class="ui-g-3">
+              <p-autoComplete name="deptId" ngModel #ctl_deptId="ngModel"  required [items]="deptList" valueField="deptId" textField="deptName" [(ngModel)]="deptId"></p-autoComplete>
+              <control-messages [control]="ctl_deptId"></control-messages>
+            </div>
+            <div [ngStyle]="{'text-align':'right'}" class="ui-g-3">
+              <p-label value="出生日期："></p-label>
+            </div>
+            <div class="ui-g-3">
+              <p-calendar name="birthday" ngModel #ctl_birthday="ngModel"  required [(ngModel)]="birthday"></p-calendar>
+              <control-messages [control]="ctl_birthday"></control-messages>
+            </div>
+          </div>
+          <div class="ui-g">
+            <div [ngStyle]="{'text-align':'right'}" class="ui-g-3">
+              <p-label value="所在地区："></p-label>
+            </div>
+            <div class="ui-g-9">
+              <p-autoComplete name="provinceId" [items]="provinces" valueField="id" textField="name" [(ngModel)]="provinceId" (onSelect)="provinceChange($event)"></p-autoComplete>
+              <p-autoComplete name="cityId" [items]="cities" valueField="id" textField="name" [(ngModel)]="cityId"></p-autoComplete>
+            </div>
+          </div>
+          <div class="ui-g">
+            <div [ngStyle]="{'text-align':'right'}" class="ui-g-3">
+              <p-label value="备注："></p-label>
+            </div>
+            <div class="ui-g-9">
+              <textarea pInputTextarea [ngStyle]="{'width':'80%','height':'100px'}" name="note" ngModel #ctl_note="ngModel"  v_maxlength v_maxlength="200" [(ngModel)]="note"></textarea>
+              <control-messages [control]="ctl_note"></control-messages>
+            </div>
+          </div>
+          <div class="ui-g">
+            <div [ngStyle]="{'text-align':'center'}" class="ui-g-12">
+              <button pButton type='button' label="提交" (click)="addUser()"></button>
+              <button pButton type='button' label="重置" (click)="reset()"></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </p-fieldset>
+  </div>
+
+</div>
