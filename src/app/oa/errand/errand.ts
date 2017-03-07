@@ -1,8 +1,7 @@
 import {Component, OnInit, NgModule, ViewChild} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {RouterModule, Routes} from "@angular/router";
-import {PanelModule} from 'primeng/primeng';
-import {FieldsetModule,LabelModule, ButtonModule,InputTextModule, V_MaxLength,ControlMsgModule, DropdownModule, AutoCompleteModule, CalendarModule, InputTextareaModule, SharedModule} from 'primeng/primeng';
+import {FieldsetModule, ButtonModule,InputTextModule,  DropdownModule, AutoCompleteModule, CalendarModule, InputTextareaModule, SharedModule} from 'primeng/primeng';
 import {FormBuilder, FormGroup, FormsModule} from "@angular/forms";
 import {Http, HttpModule} from "@angular/http";
 @Component({
@@ -104,11 +103,9 @@ const errandRoutes:Routes=[
   imports:[CommonModule,
     HttpModule, FormsModule,
     RouterModule.forChild(errandRoutes),
-    PanelModule,
-    FieldsetModule,
-    LabelModule, InputTextModule, ControlMsgModule, DropdownModule, AutoCompleteModule, CalendarModule, InputTextareaModule, ButtonModule, CommonModule, SharedModule
+    InputTextModule,  DropdownModule, AutoCompleteModule, CalendarModule, InputTextareaModule, ButtonModule, CommonModule, SharedModule
   ],
-  declarations:[ErrandComponent,V_MaxLength],
+  declarations:[ErrandComponent],
   providers: [FormBuilder]
 })
 export class ErrandModule{}

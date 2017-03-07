@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {SideBarModule} from "./component/sidebar/sidebar";
+import {SlimScrollModule} from "./component/scroll/scroll";
 
 
 @NgModule({

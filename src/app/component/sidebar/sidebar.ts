@@ -6,6 +6,7 @@ import {
 import { MenuItem } from 'primeng/primeng';
 import {CommonModule} from "@angular/common";
 import {Router} from "@angular/router";
+import {SlimScrollModule, ISlimScrollOptions} from "../scroll/scroll";
 
 @Component({
     selector: 'app-sidebar',
@@ -166,6 +167,11 @@ export class SubMenu {
 
   activeIndex: number;
 
+  // opts: ISlimScrollOptions = {
+  //   position: 'right',
+  //   barBackground: '#000000',
+  // }
+
   constructor(private router: Router) { }
 
   itemClick(event: Event, item: MenuItem, index: number)  {
@@ -183,7 +189,9 @@ export class SubMenu {
 }
 
 @NgModule({
-  imports:[CommonModule],
+  imports:[CommonModule,
+    SlimScrollModule
+  ],
   declarations:[SideBar,SubMenu],
   exports:[SideBar,SubMenu]
 })

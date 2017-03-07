@@ -1,4 +1,5 @@
 import {Component, Renderer, ElementRef, ViewChild, AfterViewInit, OnDestroy} from '@angular/core';
+declare var jQuery: any;
 
 @Component({
   selector: 'app-root',
@@ -11,17 +12,18 @@ export class AppComponent implements AfterViewInit,OnDestroy{
 
   public menuActiveMobile: boolean; // 手机
 
-  public profileActive: boolean;
-
   public topMenuActive: boolean;
 
   public topMenuLeaving: boolean;
 
   @ViewChild('scroller') public scrollerViewChild: ElementRef;
+
   public scroller: HTMLDivElement;
+
   documentClickListener: Function;
 
   menuClick: boolean;
+
   topMenuButtonClick: boolean;
 
   constructor(public renderer: Renderer) {}
